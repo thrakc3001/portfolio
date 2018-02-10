@@ -9,29 +9,85 @@
 	<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
 </head>
 <body>
+	<div id='home'>
+		<div id='nav'>
+	    <ul>
+	    	<li><a href='#home'>Home</a></li>
+	      <li><a href='#about'>About</a></li>
+	      <li><a href='#experience'>Experience</a></li>
+	      <li><a href='#education'>Education</a></li>
+	      <li><a href='#projects'>Projects</a></li>
+	    </ul>
+		</div>
+	</div>
+	<canvas class='canvas hidden'></canvas>
 	<div class='container'>
 		<ul class='title hidden'>
-		  <li onmouseover="playHover('./audio/1.mp3', 'au1');">M</li>
-		  <li onmouseover="playHover('./audio/2.mp3', 'au2');">A</li>
-		  <li onmouseover="playHover('./audio/3.mp3', 'au3');">T</li>
-		  <li onmouseover="playHover('./audio/4.mp3', 'au4');">T</li>
-		  <li>&nbsp;</li>
-		  <li onmouseover="playHover('./audio/5.mp3', 'au5');">C</li>
-		  <li onmouseover="playHover('./audio/6.mp3', 'au6');">A</li>
-		  <li onmouseover="playHover('./audio/7.mp3', 'au7');">I</li>
-		  <li onmouseover="playHover('./audio/8.mp3', 'au8');">N</li>
-	  </ul>
-	  <audio id='au1' src=''></audio>
-	  <audio id='au2' src=''></audio>
-	  <audio id='au3' src=''></audio>
-	  <audio id='au4' src=''></audio>
-	  <audio id='au5' src=''></audio>
-	  <audio id='au6' src=''></audio>
-	  <audio id='au7' src=''></audio>
-	  <audio id='au8' src=''></audio>
-	  <h2 class='description hidden'>Full Stack Web Developer/Musician</h2>
-		<canvas class='canvas hidden'></canvas>
+			<li onmouseover="playHover('au1');">M</li>
+			<li onmouseover="playHover('au2');">A</li>
+			<li onmouseover="playHover('au3');">T</li>
+			<li onmouseover="playHover('au4');">T</li>
+			<li>&nbsp;</li>
+			<li onmouseover="playHover('au5');">C</li>
+			<li onmouseover="playHover('au6');">A</li>
+			<li onmouseover="playHover('au7');">I</li>
+			<li onmouseover="playHover('au8');">N</li>
+		</ul>
+		<h2 class='description hidden'>Full Stack Web Developer/Musician</h2>
 	</div>
+
+	<audio id='au1' src='./audio/1.mp3'></audio>
+	<audio id='au2' src='./audio/2.mp3'></audio>
+	<audio id='au3' src='./audio/3.mp3'></audio>
+	<audio id='au4' src='./audio/4.mp3'></audio>
+	<audio id='au5' src='./audio/5.mp3'></audio>
+	<audio id='au6' src='./audio/6.mp3'></audio>
+	<audio id='au7' src='./audio/7.mp3'></audio>
+	<audio id='au8' src='./audio/8.mp3'></audio>
+
+	<div id='about'>
+		<div id='page1'>
+		    <h1>ABOUT ME</h1>
+					<p>I'm a web developer with a keen eye for the visual spectrum and a sound mind for developing on the back end. Developing useful and practical applications in Javascript is a growing passion for me and I love working on projects with other like-minded developers. Being a former nationally touring musician, I have channeled interpersonal communication and creative energy into my web development skills in order to work effectively with teams in an efficient manner.</p>
+		</div>
+	</div>
+
+<div id='experience'>
+	<div id='page2'>
+		<h1>EXPERIENCE</h1>
+			<h3>Freelance Web Developer <span>(2017-present)</span></h3>
+				<h4>Web Developer</h4>
+					<p>Making web apps for friends and family is my passion.</p>
+					<br/>
+			<h3>Nadis Warriors <span>(2010-2017)</span></h3>
+				<h4>Guitar/Keyboards/Producer</h4>
+					<p>I toured nationally with Nadis Warriors as a producer, guitarist, and keyboard <br/> player, occasionally playing on stage with renowned visual artist, Alex Grey.</p>
+					<br/>
+			<h3>Alvin Ord's <span>(2010-present)</span></h3>
+				<h4>Manager/Food Service</h4>
+					<p>I help oversee a team of food and customer service professionals at <br/> the popular San Marcos, TX restaurant.</p>
+	</div>
+</div>
+
+<div id='education'>
+  <div id='page3'>
+    <h1>EDUCATION</h1>
+			<h3>The University of Texas at San Antonio <span>(2004-2008)</span></h3>
+				<h4>BA in Music</h4>
+				<br/>
+			<h3>General Assembly <span>(09/2017-12/2017)</span></h3>
+				<h4>Immersive Full Stack Web Development Program</h4>
+	</div>
+</div>
+
+<div id='projects'>
+  <div id='page4'></a>
+		<h1>PROJECTS</h1>
+			<h3>Scales and Chords App</h3>
+			<h3>Leftovers App</h3>
+	</div>
+</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src='index.js' type='text/javascript'></script>
 </body>

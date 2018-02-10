@@ -3,17 +3,63 @@
 html, body { 
 	width:100%; 
 	height:100%;
+}
 
+body {
+}
+
+.container {
+	height: 1200px;
+}
+
+#nav ul {
+	width: 100%;
+	position: fixed;
+	top: 8px;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	z-index: 2;
+}
+
+#nav ul li {
+	margin: 0 auto;
+	display: inline-block;
+	border: 2px white solid;
+	font-family: 'Vollkorn', serif;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	width: 200px;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 0;
+	width: 200px;
+}
+
+a:visited {
+	color: white;
 }
 
 .canvas {
-	display: block;
-	border: 1px solid black;
-	width: 100vw;
-	height: 100vh;
-	box-sizing: border-box;
+	position: fixed;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background: url('./images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 	opacity: .7;
+	z-index: -1;
 }
 
 .canvas.hidden {
@@ -22,12 +68,10 @@ html, body {
 
 .title {
 	list-style: none;
-	position: absolute;
-	top: 200px;
+	position: relative;
+	top: 310px;
 	margin: 0 auto;
-	width: 100%;
 	text-align: center;
-	z-index: 1;
 }
 
 .title li {
@@ -57,9 +101,7 @@ html, body {
 .title.hidden li:nth-child(9) { transform: translateX(60px) translateY(200px); }
 
 h2 {
-	position: absolute;
-	z-index: 1;
-	width: 100%;
+	position: relative;
 	top: 350px;
 	margin: 0 auto;
 	text-align: center;
@@ -72,4 +114,121 @@ h2 {
 
 .description.hidden {
 	opacity: 0;
+}
+
+h1 {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Vollkorn', serif;
+	text-decoration: underline;
+	padding: 5px 0 15px 0;
+}
+
+p {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+	font-family: 'Vollkorn', serif;
+	font-size: 20px;
+	padding: 5px 0 15px 0;
+}
+
+span {
+	text-align: right;
+	font-size: 20px;
+}
+
+.categories li {
+	margin: 0 auto;
+	text-align: center;
+	width: 800px;
+	font-family: 'Vollkorn', serif;
+	font-size: 20px;
+}
+
+#about, #experience, #education, #projects {
+	height: 800px;
+	background-color: transparent;
+}
+
+#page1 {
+	padding: 15px 0 15px 0;
+	margin: 0 auto;
+	border-top: 1px black solid;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+	width: 1000px;
+	background-color: white;
+	position: relative;
+	top: 300px;
+}
+
+#page2 {
+	margin: 0 auto;
+	padding: 15px 0 15px 0;
+	background-color: #88A09E;
+	color: white;
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	1px 1px 0 #000,
+	1px 1px 0 #000;
+	width: 100%;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+	width: 1000px;
+	position: relative;
+	top: 300px;
+}
+
+#page3 {
+	padding: 15px 0 15px 0;
+	margin: 0 auto;
+	width: 100%;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+	width: 1000px;
+	background-color: white;
+	position: relative;
+	top: 300px;
+}
+
+#page4 {
+	padding: 15px 0 15px 0;
+	background-color: #88A09E;
+	color: white;
+	margin: 0 auto;
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	1px 1px 0 #000,
+	1px 1px 0 #000;
+	width: 100%;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+	width: 1000px;
+	position: relative;
+	top: 300px;
+}
+
+h3 {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+	font-family: 'Vollkorn', serif;
+	font-size: 35px;
+}
+
+h4 {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+	font-family: 'Vollkorn', serif;
+	font-size: 25px;
+	padding: 5px 0 5px 0;
 }

@@ -18,8 +18,7 @@ $(function() {
     }, 500);
 });
 
-function playHover(snd, el) {
-	document.getElementById(el).setAttribute('src', snd);
+function playHover(el) {
 	document.getElementById(el).play();
 }
 

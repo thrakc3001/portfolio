@@ -99,7 +99,7 @@ var linkHandler = function(ev) {
         var node = document.getElementById(this.hash.substring(1))
         if (!node) return; // Do not scroll to non-existing node
 
-        smoothScroll(node, 500, function (el) {
+        smoothScroll(node, 1800, function (el) {
             location.replace('#' + el.id)
             // this will cause the :target to be activated.
         });

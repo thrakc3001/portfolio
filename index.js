@@ -18,6 +18,12 @@ $(function() {
     }, 500);
 });
 
+$(function() {
+    setTimeout(function() {
+        $('.nav').removeClass('hidden');
+    }, 500);
+});
+
 function playHover(el) {
 	document.getElementById(el).play();
 }

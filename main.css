@@ -376,25 +376,25 @@ h4 {
 	#proj1click {
 	top: 35px;
 	left: -77px;
-	width: 200px;
+	width: 230px;
 	}
 
 	#proj1git {
 		position: relative;
 		top: 54px;
-		left: -218px;
+		left: -245px;
 	}
 
 	#proj2click {
 		top: 80px;
 		left: -233px;
-		width: 200px;
+		width: 230px;
 	}
 
 	#proj2git {
 		position: relative;
 		top: 100px;
-		left: -370px;
+		left: -400px;
 	}
 }
 

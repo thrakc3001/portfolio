@@ -5,9 +5,6 @@ html, body {
 	height:100%;
 }
 
-body {
-}
-
 .container {
 	height: 1000px;
 }
@@ -37,7 +34,7 @@ body {
 	color: white;
 	text-decoration: none;
 	background-color: black;
-	width: 200px;
+	width: 160px;
 	outline: 1px black solid;
 }
 
@@ -47,6 +44,10 @@ a {
 	padding: 0;
 	width: 200px;
 	color: white;
+}
+
+.nav a {
+	width: 160px;
 }
 
 a:visited {
@@ -351,4 +352,67 @@ h4 {
 	position: relative;
 	top: 100px;
 	left: -474px;
+}
+
+@media (max-width: 1400px) {
+	#about {
+		height: 370px;
+	}
+
+	#experience {
+		height: 530px;
+	}
+
+	#education {
+		height: 417px;
+	}
+
+	#leftoverimg2 {
+		position: relative;
+		left: -105px;
+		bottom: -60px;
+	}
+
+	#proj1click {
+	top: 35px;
+	left: -77px;
+	width: 200px;
+	}
+
+	#proj1git {
+		position: relative;
+		top: 54px;
+		left: -218px;
+	}
+
+	#proj2click {
+		top: 80px;
+		left: -233px;
+		width: 200px;
+	}
+
+	#proj2git {
+		position: relative;
+		top: 100px;
+		left: -370px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.title li {
+		font-size: 100px;
+	}
+
+	.nav ul li {
+		width: 150px;
+		margin: 0 auto;
+	}
+
+	a {
+		width: 150px;
+	}
+
+	.container {
+		height: 500px;
+	}
 }

@@ -1,5 +1,3 @@
-let canvas = document.querySelector('canvas');
-
 $(function() {
     setTimeout(function() {
         $('.title').removeClass('hidden');
@@ -27,6 +25,9 @@ $(function() {
 function playHover(el) {
 	document.getElementById(el).play();
 }
+
+
+let canvas = document.querySelector('canvas');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;

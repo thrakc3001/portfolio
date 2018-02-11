@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-	height: 1200px;
+	height: 1000px;
 }
 
 .nav.hidden ul{
@@ -38,6 +38,7 @@ body {
 	text-decoration: none;
 	background-color: black;
 	width: 200px;
+	outline: 1px black solid;
 }
 
 a {
@@ -90,8 +91,12 @@ a:visited {
 	opacity: 1;
 	transition: all 2.5s ease;
 	-webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-
+	-webkit-text-stroke-color: black;
+	text-shadow:
+	2px 3px 0 black,
+	1px -1px 0 black,
+	1px 1px 0 black,
+	1px 1px 0 black;
 }
 
 .title.hidden li {
@@ -118,6 +123,11 @@ a:visited {
 	font-size: 50px;
 	transition: all 2.5s ease;
 	opacity: 1;
+	text-shadow:
+	2px 3px 0 black,
+	1px -1px 0 black,
+	1px 1px 0 black,
+	1px 1px 0 black;
 }
 
 .description.hidden {
@@ -133,6 +143,10 @@ h1 {
 	font-family: 'Vollkorn', serif;
 	text-decoration: underline;
 	padding: 5px 0 15px 0;
+}
+
+#page1 p {
+	font-size: 28px;
 }
 
 p {
@@ -174,7 +188,7 @@ span {
 	border: 1px black solid;
 	position: relative;
 	top: 280px;
-	box-shadow: 5px 5px 7px black;
+	box-shadow: 2px 2px 3px black;
 }
 
 #page2 {
@@ -191,7 +205,7 @@ span {
 	width: 1000px;
 	position: relative;
 	top: 280px;
-	box-shadow: 5px 5px 7px black;
+	box-shadow: 2px 2px 3px black;
 }
 
 #page3 {
@@ -202,7 +216,7 @@ span {
 	border: 1px black solid;
 	position: relative;
 	top: 280px;
-	box-shadow: 5px 5px 7px black;
+	box-shadow: 2px 2px 3px black;
 }
 
 #page4 {
@@ -218,8 +232,8 @@ span {
 	border: 1px black solid;
 	width: 1000px;
 	position: relative;
-	top: 280px;
-	box-shadow: 5px 5px 7px black;
+	top: 150px;
+	box-shadow: 2px 2px 3px black;
 }
 
 h3 {
@@ -230,6 +244,14 @@ h3 {
 	font-size: 35px;
 }
 
+#page3 h3 {
+	text-align: center;
+}
+
+#page3 h4 {
+	text-align: center;
+}
+
 h4 {
 	width: 800px;
 	margin: 0 auto;
@@ -237,4 +259,96 @@ h4 {
 	font-family: 'Vollkorn', serif;
 	font-size: 25px;
 	padding: 5px 0 5px 0;
+}
+
+#scaleimg {
+	position: relative;
+	left: 50px;
+	top: 13px;
+}
+
+#scaleimg img {
+	height: 200px;
+	position: relative;
+}
+
+#leftoverimg {
+	position: relative;
+	left: 50px;
+	bottom: 60px;
+}
+
+#leftoverimg img {
+	width: 233px;
+	position: relative;
+}
+
+#leftoverimg2 {
+	position: relative;
+	left: -154px;
+	bottom: -60px;
+}
+
+#leftoverimg2 img {
+	width: 233px;
+	position: relative;
+}
+
+#proj1 {
+	position: relative;
+	bottom: 195px;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+
+#proj2 {
+	position: relative;
+	bottom: 185px;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+
+#proj1 a, #proj2 a {
+	width: 400px;
+}
+
+#projects p {
+	width: 400px;
+	text-align: center;
+}
+
+#proj1p {
+	position: relative;
+	bottom: 180px;
+}
+
+#proj2p {
+	position: relative;
+	bottom: 170px;
+}
+
+#proj1click {
+	position: relative;
+	top: 34px;
+	left: -130px;
+}
+
+#proj1git {
+	position: relative;
+	top: 54px;
+	left: -274px;
+}
+
+#proj2click {
+	position: relative;
+	top: 80px;
+	left: -328px;
+}
+
+#proj2git {
+	position: relative;
+	top: 100px;
+	left: -474px;
 }

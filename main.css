@@ -1,12 +1,13 @@
 * { margin:0; padding:0; }
 
 html, body { 
-	width:100%; 
-	height:100%;
+	width:100vw; 
+	height:100vh;
 }
 
 .container {
 	height: 1000px;
+	width: 950px;
 }
 
 .nav.hidden ul{
@@ -79,6 +80,7 @@ a:visited {
 	list-style: none;
 	position: relative;
 	top: 310px;
+	left: 20px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -87,7 +89,7 @@ a:visited {
 	display: inline-block;
 	font-family: 'Gravitas One', cursive;
 	font-weight: 500;
-	font-size: 128px;
+	font-size: 120px;
 	color: white;
 	opacity: 1;
 	transition: all 2.5s ease;
@@ -117,6 +119,7 @@ a:visited {
 .description {
 	position: relative;
 	top: 350px;
+	left: 20px;
 	margin: 0 auto;
 	text-align: center;
 	font-family: 'Vollkorn', serif;
@@ -174,6 +177,7 @@ span {
 
 #about, #experience, #education {
 	height: 800px;
+	width: 100%;
 	background-color: transparent;
 }
 
@@ -197,11 +201,6 @@ span {
 	padding: 15px 0 15px 0;
 	background-color: #88A09E;
 	color: white;
-	text-shadow:
-	-1px -1px 0 #000,
-	1px -1px 0 #000,
-	1px 1px 0 #000,
-	1px 1px 0 #000;
 	border: 1px black solid;
 	width: 1000px;
 	position: relative;
@@ -225,11 +224,6 @@ span {
 	background-color: #88A09E;
 	color: white;
 	margin: 0 auto;
-	text-shadow:
-	-1px -1px 0 #000,
-	1px -1px 0 #000,
-	1px 1px 0 #000,
-	1px 1px 0 #000;
 	border: 1px black solid;
 	width: 1000px;
 	position: relative;
@@ -333,86 +327,254 @@ h4 {
 #proj1click {
 	position: relative;
 	top: 34px;
-	left: -130px;
+	left: -138px;
+	text-align: center;
 }
 
 #proj1git {
 	position: relative;
 	top: 54px;
-	left: -274px;
+	left: -340px;
+	text-align: center;
 }
 
 #proj2click {
 	position: relative;
 	top: 80px;
-	left: -328px;
+	left: -345px;
+	text-align: center;
 }
 
 #proj2git {
 	position: relative;
 	top: 100px;
-	left: -474px;
+	left: -550px;
+	text-align: center;
 }
 
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
+	.title li {
+		font-size: 100px;
+	}
+
+	h1 {
+		font-size: 75px;
+	}
+
+	h3 {
+		font-size: 50px;
+	}
+
+	#education h3 {
+		width: 100%;
+	}
+
+	h4 {
+		font-size: 38px;
+	}
+
+	p {
+		font-size: 28px;
+	}
+
+	.title {
+		top: 500px;
+	}
+
+	.description {
+		top: 525px;
+	}
+
+	#page1 p {
+	font-size: 50px;
+	}
+
+	#page2 {
+		top: 180px;
+	}
+
+	#page4 {
+		top: 220px;
+	}
+
+	.container {
+		height: 1200px;
+	}
+
 	#about {
-		height: 370px;
+		height: 1200px;
 	}
 
 	#experience {
-		height: 530px;
+		height: 1200px;
 	}
 
 	#education {
-		height: 417px;
+		height: 1200px;
+	}
+
+	#projects {
+		height: 1200px;
+	}
+
+	#scaleimg {
+	position: relative;
+	left: 50px;
+	top: 75px;
 	}
 
 	#leftoverimg2 {
-		position: relative;
 		left: -105px;
-		bottom: -60px;
+		bottom: -120px;
+	}
+
+	#leftoverimg {
+		bottom: 0px;
 	}
 
 	#proj1click {
-	top: 35px;
-	left: -77px;
+	top: 100px;
+	left: -100px;
 	width: 230px;
 	}
 
 	#proj1git {
 		position: relative;
-		top: 54px;
-		left: -245px;
+		top: 120px;
+		left: -295px;
 	}
 
 	#proj2click {
-		top: 80px;
-		left: -233px;
+		top: 145px;
+		left: -258px;
 		width: 230px;
 	}
 
 	#proj2git {
 		position: relative;
-		top: 100px;
-		left: -400px;
-	}
-}
-
-@media (max-width: 1200px) {
-	.title li {
-		font-size: 100px;
+		top: 168px;
+		left: -445px;
 	}
 
-	.nav ul li {
-		width: 150px;
-		margin: 0 auto;
+	#projects p {
+		left: 100px;
+		width: 600px;
+		text-align: left;
+	}
+
+	#proj1 a {
+		width: 600px;
+		position: relative;
+		right: 55px;
+	}
+
+	#proj2 a {
+		width: 600px;
+		position: relative;
+		right: 150px;
 	}
 
 	a {
 		width: 150px;
 	}
+}
 
+@media only screen and (max-width: 750px) {
 	.container {
-		height: 500px;
+		height: 1600px;
+	}
+
+	#about {
+		height: 1600px;
+	}
+
+	#experience {
+		height: 1600px;
+	}
+
+	#education {
+		height: 1600px;
+	}
+
+	#education h4 {
+		font-size: 34px;
+	}
+
+	h1 {
+		font-size: 75px;
+	}
+
+	h3 {
+		font-size: 60px;
+	}
+
+	#page3 h3 {
+		font-size: 50px;
+	}
+
+	#education h3 {
+		width: 100%;
+	}
+
+	h4 {
+		font-size: 43px;
+	}
+
+	p {
+		font-size: 33px;
+	}
+
+	#projects p {
+		width: 600px;
+		font-size: 40px;
+	}
+
+	#proj1 a {
+		right: 5px;
+}
+
+	#proj2 a {
+		right: 120px;
+	}
+
+	#scaleimg {
+		left: 35px;
+		top: 100px;
+	}
+
+	#leftoverimg {
+		bottom: -30px;
+		left: 36px;
+	}
+
+	#leftoverimg2 {
+		left: -118px;
+		bottom: -175px;
+	}
+
+	#proj1click {
+	top: 130px;
+	left: -110px;
+	width: 230px;
+	font-size: 28px;
+	}
+
+	#proj1git {
+		top: 170px;
+		left: -310px;
+		font-size: 28px;
+	}
+
+	#proj2click {
+		top: 205px;
+		left: -265px;
+		width: 230px;
+		font-size: 28px;
+	}
+
+	#proj2git {
+		top: 245px;
+		left: -460px;
+		font-size: 28px;
 	}
 }
